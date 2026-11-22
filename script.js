@@ -35,24 +35,14 @@ speechSynthesis.speak(voice);
             setTimeout(() => {
 
                 countdown.style.display = "none";
+     document.getElementById("giftBox").classList.add("opened");
 
-                document.getElementById("giftBox").classList.add("opened");
+let music = document.getElementById("birthdayMusic");
 
-                function toggleBirthdayMusic() {
-    let music = document.getElementById("birthdayMusic");
-    let button = document.getElementById("musicButton");
-
-    if (music.paused) {
-        music.play().then(() => {
-            button.textContent = "Pause Birthday Music ⏸️";
-        }).catch(error => {
-            alert("Audio error: " + error.message);
-        });
-    } else {
-        music.pause();
-        button.textContent = "Play Birthday Music 🎵";
-    }
-                }
+music.play().catch(error => {
+    console.log("Music error:", error);
+});
+                
                 document.getElementById("surpriseMessage").style.display = "block";
 
                 document.getElementById("birthdayCake").style.display = "block";
