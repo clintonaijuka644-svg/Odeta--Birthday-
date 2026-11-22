@@ -41,11 +41,6 @@ speechSynthesis.speak(voice);
                 countdown.style.display = "none";
      document.getElementById("giftBox").classList.add("opened");
 
-let music = document.getElementById("birthdayMusic");
-
-music.play().catch(error => {
-    console.log("Music error:", error);
-});
                 
                 document.getElementById("surpriseMessage").style.display = "block";
 
