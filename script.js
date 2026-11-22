@@ -82,7 +82,7 @@ function blowCandle() {
 
 }
 function toggleBirthdayMusic() {
-    let music = document.getElementById("birthdayVideo");
+ let music = document.getElementById("birthdayMusic");
     let button = document.getElementById("musicButton");
 
     if (music.paused) {
