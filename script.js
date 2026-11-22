@@ -40,6 +40,10 @@ speechSynthesis.speak(voice);
 
                 let music = document.getElementById("birthdayMusic");
 
+music.play().catch(error => {
+    console.log("Music playback error:", error);
+});
+
                 document.getElementById("musicButton").textContent =
                     "Pause Birthday Music ⏸️";
 
