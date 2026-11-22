@@ -186,3 +186,7 @@ function playWishSound() {
     audio.play();
 
 }
+function testBirthdayAudio() {
+    let music = document.getElementById("birthdayMusic");
+    music.play().catch(error => alert(error.message));
+}
