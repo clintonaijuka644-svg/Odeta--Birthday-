@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Odeta ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="flower-animation">
+    <span>🌹</span>
+    <span>🌸</span>
+    <span>✨</span>
+    <span>🌹</span>
+    <span>💗</span>
+    <span>🌸</span>
+    <span>✨</span>
+    <span>🌹</span>
+</div>
+    <div class="birthday-container">
+
+        <h1>For You, Odeta 🌹</h1>
+
+        <p>A little surprise made with love...</p>
+
+<div class="gift-area">
+<div id="countdown" style="display: none;">
+    4
+</div>
+    <div class="gift-box" id="giftBox" onclick="openGift()">
+        <div class="gift-lid"></div>
+        <div class="gift-ribbon"></div>
+        <div class="gift-body">🎁</div>
+    </div>
+
+    <p class="gift-instruction">Tap the gift to open it ❤️</p>
+<div class="surprise-message" id="surpriseMessage">
+
+    <h2>Happy Birthday, Odeta! ❤️</h2>
+
+    <p>
+        Today is a special day because someone
+        as wonderful as you was born.
+        May your life be filled with happiness,
+        beautiful memories and endless blessings.
+    </p>
+
+    <h3>With lots of love 🌹</h3>
+
+</div>
+<div class="birthday-cake" id="birthdayCake">
+
+    <h2>A Cake Just For You 🎂</h2>
+
+    <div class="cake">
+        <div class="candle">
+            <div class="flame"></div>
+        </div>
+
+        <div class="cake-top"></div>
+        <div class="cake-body"></div>
+    </div>
+
+    <p>Make a beautiful wish, Odeta! ✨</p>
+    <button class="wish-button" onclick="blowCandle()">
+    Make a Wish ✨
+</button>
+
+<p id="wishMessage" class="wish-message">
+    May all your beautiful dreams come true, Odeta! ❤️
+</p>
+</div>
+
+<div class="letter-section">
+
+    <button onclick="showLetter()">
+        Open Your Special Letter 💌
+    </button>
+
+    <div class="birthday-letter" id="birthdayLetter">
+
+        <h2>Dear Odeta ❤️</h2>
+
+        <p>
+            On your special day, I just want you to know
+            how precious and wonderful you are.
+
+            May every new chapter of your life bring
+            beautiful opportunities, happiness and
+            countless reasons to smile.
+
+            You deserve all the beautiful things
+            life has to offer.
+
+            Happy Birthday, Odeta! 🌹
+        </p>
+
+        <h3>With love ❤️</h3>
+
+    </div>
+
+<div class="photo-gallery" id="photoGallery">
+
+    <h2>Beautiful Memories of You 🌹</h2>
+
+   
+   
+<div class="final-surprise">
+
+    <button onclick="revealFinalMessage()">
+        One Last Surprise ✨
+    </button>
+
+    <div class="final-message" id="finalMessage">
+
+        <h1>To Odeta ❤️</h1>
+
+        <h2>You Are Special!</h2>
+
+        <p>
+            May your days be filled with laughter,
+            your dreams become reality, and your
+            heart always find reasons to be happy.
+
+            Never forget how special you are.
+
+            Happy Birthday, Odeta! 🌹
+        </p>
+<button id="lastSurpriseButton" onclick="showLastSurprise()">
+    One Last Surprise ✨
+</button>
+<div id="lastSurprise" style="display: none;">
+    <h2>For You, Odeta 🌹</h2>
+    <p>
+        May this new chapter bring you beautiful memories,
+        endless opportunities and happiness in everything you do.
+    </p>
+    <h3>Keep shining! ✨</h3>
+</div>
+        <div class="final-decoration">🌹 ✨ 💗 ✨ 🌹</div>
+
+    </div>
+
+</div>
+
+</div>
+<div class="wish-section">
+
+    <h2>⭐ Make a Wish ⭐</h2>
+
+    <p>Close your eyes and make a wish...</p>
+<button onclick="playWishSound(); revealWish();" id="wishButton">
+
+    <div id="wishMessage">
+        <!-- YOUR PERSONAL BIRTHDAY WISH GOES HERE -->
+    </div>
+
+</div>
+</div>
+
+</div>
+    </div>
+
+    <script src="script.js"></script>
+	
+<video id="birthdayVideo" style="display:none;" preload="auto">
+    <source src="./music/birthday.mp4" type="video/mp4">
+</video>
+
+<button id="musicButton" onclick="toggleBirthdayMusic()">
+    Play Birthday Music 🎵
+</button>
+
+</body>
+</html>
