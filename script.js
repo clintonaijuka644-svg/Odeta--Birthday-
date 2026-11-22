@@ -38,8 +38,7 @@ speechSynthesis.speak(voice);
 
                 document.getElementById("giftBox").classList.add("opened");
 
-                let music = document.getElementById("birthdayVideo");
-                music.play();
+                let music = document.getElementById("birthdayMusic");
 
                 document.getElementById("musicButton").textContent =
                     "Pause Birthday Music ⏸️";
