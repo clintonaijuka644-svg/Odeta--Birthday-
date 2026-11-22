@@ -15,7 +15,7 @@ body {
 background-image:
     linear-gradient(rgba(35, 15, 30, 0.60),
                     rgba(65, 25, 45, 0.60)),
-    url("images/odeta-princess.png");
+    url("odeta-princess.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
