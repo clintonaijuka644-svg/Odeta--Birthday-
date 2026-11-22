@@ -1,6 +1,10 @@
 let giftOpening = false;
 function openGift() {
 if (giftOpening) return;
+    let music = document.getElementById("birthdayMusic");
+music.play().catch(error => {
+    console.log("Music error:", error);
+});
 giftOpening = true;
     let countdown = document.getElementById("countdown");
     let number = 4;
