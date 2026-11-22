@@ -106,7 +106,7 @@ document.addEventListener("keydown", function(event) {
 
     if (event.key.toLowerCase() === "m") {
 
-        let music = document.getElementById("birthdayVideo");
+        let music = document.getElementById("birthdayMusic");
 
         if (music.paused) {
             music.play();
