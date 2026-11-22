@@ -38,18 +38,21 @@ speechSynthesis.speak(voice);
 
                 document.getElementById("giftBox").classList.add("opened");
 
-                let music = document.getElementById("birthdayMusic");
+                function toggleBirthdayMusic() {
+    let music = document.getElementById("birthdayMusic");
+    let button = document.getElementById("musicButton");
 
-music.pause();
-music.currentTime = 0;
-
-music.play().then(() => {
-    document.getElementById("musicButton").textContent =
-        "Pause Birthday Music ⏸️";
-}).catch(error => {
-    console.log("Music playback error:", error);
-});
-
+    if (music.paused) {
+        music.play().then(() => {
+            button.textContent = "Pause Birthday Music ⏸️";
+        }).catch(error => {
+            alert("Audio error: " + error.message);
+        });
+    } else {
+        music.pause();
+        button.textContent = "Play Birthday Music 🎵";
+    }
+                }
                 document.getElementById("surpriseMessage").style.display = "block";
 
                 document.getElementById("birthdayCake").style.display = "block";
